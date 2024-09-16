@@ -44,3 +44,53 @@ p {
 .uppercase{
     text-transform: uppercase;
 }
+
+.outfit, .btn, .footer-pages-list-wrapper{
+    font-family: "Outfit", sans-serif;
+}
+
+.league{
+    font-family: "League Spartan", sans-serif;
+}
+
+.header-nav-list-item a{
+    color: white;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.header-nav-list-item{
+    list-style: none;
+    padding: 0;
+}
+
+.header-logo{
+    font-size:3rem;
+    font-family: "Kanit", sans-serif;
+    background-color: hsla(244, 22%, 41%, 0.5)
+}
+
+.header-nav{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: #E16C96;
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header-nav-list-left, .header-nav-list-right {
+    margin: 0;
+}
+
+.menu-link{
+    transition: color 300ms;
+}
+
+.menu-link:hover, .menu-link:focus{
+    color: #565280;
+}
