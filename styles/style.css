@@ -64,15 +64,15 @@ p {
     padding: 0;
 }
 
-.header-logo{
+.header-logo, .header-logo-text{
     font-size:3rem;
     font-family: "Kanit", sans-serif;
-    background-color: hsla(244, 22%, 41%, 0.5)
+    
 }
 
 .header-nav{
     position: fixed;
-    left: 0;
+    left: 100%;
     right: 0;
     bottom: 0;
     top: 0;
@@ -80,10 +80,19 @@ p {
     font-size: 3rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    width: 100%;
+    transform: translateX(0);
+    transition: transform 250ms;
+
+}
+
+.open-nav{
+    transform: translateX(-100%);
+
 }
 
 .header-nav-list-left, .header-nav-list-right {
+    padding: 0;
     margin: 0;
 }
 
@@ -93,4 +102,78 @@ p {
 
 .menu-link:hover, .menu-link:focus{
     color: #565280;
+}
+
+
+
+.header-logo-mobile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #565280;
+}
+
+.close-btn-wrapper{
+    height:1em;
+    width:1em;
+    border: 4px dashed white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size:3rem;
+    cursor: pointer;
+}
+
+.close-nav-btn{
+    padding: 0;
+}
+.close-btn-wrapper:hover{
+    border: 4px dashed rgb(215, 215, 215);
+    color: rgb(215, 215, 215);
+}
+
+.header-nav-list-left, .header-nav-list-right{
+    padding-left:1em;
+}
+
+.menu-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsla(244, 22%, 41%);
+    padding: .5em 3em;
+    /* background-color: hsla(244, 22%, 41%, 0.5); */
+}
+
+.open-nav-wrapper{
+    width: 3em;
+    height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px dashed white;
+    cursor: pointer;
+}
+
+
+.mobile-nav-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: hsla(244, 22%, 41%);
+    padding: 0 1em;
+    height: 100px;
+    margin-bottom:1em;
+}
+.open-nav-wrapper:hover{
+    border: 4px dashed rgb(215, 215, 215);
+    color: rgb(215, 215, 215);
+}
+
+.hamburger-icon{
+    font-size:2rem;
+    margin-top:-4px;
+    padding:0;
 }
