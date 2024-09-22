@@ -41,10 +41,13 @@
                 </div>
                 <div class="open-nav-wrapper"><span class="hamburger-icon">&#9776;</span></div>
             </div>
-            <h1 class="header-nav-headline uppercase">Get <span class="dark-accent">@tted</span></h1>
-            <h3 class="header-subtitle uppercase outfit"><span class="dark-accent">//</span> Pop <span class="dark-accent">Your</span> Brand</h3>
-            <p class="header-paragraph outfit">We specialize in giving small businesses professional tools to help them compete with million dollar brands.</p>
-            <button class="header-cta btn">Let's Work</button>
+            <div class="header-hero-content">
+
+                <h1 class="header-nav-headline uppercase">Get <span class="dark-accent"><span class="bigger-text">@</span>tted</span></h1>
+                <h3 class="header-subtitle uppercase outfit"><span class="dark-accent span-icons">//</span> Pop <span class="dark-accent">Your</span> Brand</h3>
+                <p class="header-paragraph outfit">We specialize in giving small businesses professional tools to help them compete with million dollar brands.</p>
+                <button class="header-cta btn">Let's Work</button>
+            </div>
 
 
             <ul class="header-social-list">
@@ -56,23 +59,30 @@
         </header>
         <main>
             <section class="section about">
-                <h2 class="section-headline about-headline uppercase"><span class="section-headline-accent">// </span>About Us</h2>
-                <img src="./assets/about-image.png" alt="Me staring off into the distance">
-                <p class="about-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, aut veritatis error ducimus voluptas reprehenderit dolores ut sint quae praesentium corrupti quo libero quas necessitatibus, eos iure porro. Dicta, debitis!</p>
-                <button class="about-cta btn">View Portfolio</button>
+                <div class="content-wrapper main-padding">
+                    <h2 class="section-headline about-headline uppercase"><span class="section-headline-accent">// </span>About Us</h2>
+                    <p class="about-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, aut veritatis error ducimus voluptas reprehenderit dolores ut sint quae praesentium corrupti quo libero quas necessitatibus, eos iure porro. Dicta, debitis!</p>
+
+                </div>
+                <img class="about-img" src="./assets/about-image.png" alt="Me staring off into the distance">
+                <button class="about-cta btn main-padding">View Portfolio</button>
             </section>
 
             <section class="section services">
-                <h2 class="section-headline services-headline uppercase"><span class="section-headline-accent">// </span>Services</h2>
+                <div class="main-padding">
+
+                    <h2 class="section-headline services-headline uppercase"><span class="section-headline-accent">// </span>Services</h2>
+                </div>
+        
                 <div class="services-container">
                     <div class="services-container-menu">
                         <ul class="services-container-menu-list">
-                            <li class="services-container-menu-item uppercase">Web Design <span class="services-icon active">-</span></li>
-                            <li class="services-container-menu-item uppercase">Web Development <span class="services-icon">+</span></li>
-                            <li class="services-container-menu-item uppercase">Marketing <span class="services-icon">+</span></li>
+                            <li class="services-container-menu-item uppercase web-design-wrapper active-menu">Web Design<span class="services-icon active">.</span></li>
+                            <li class="services-container-menu-item uppercase web-dev-wrapper inactive-menu">Web Development <span class="services-icon">+</span></li>
+                            <li class="services-container-menu-item uppercase marketing-wrapper inactive-menu">Marketing <span class="services-icon">+</span></li>
                         </ul>
                     </div>
-                    <div class="services-content-container">
+                    <div class="services-content-container main-padding">
                         <img src="./assets/desktop-img.png" alt="laptop opened showing code resembling my coding for your website.">
                         <p class="services-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe obcaecati necessitatibus fugiat consectetur, ad optio odio accusantium perspiciatis quod voluptates eius quia molestiae tempora, repudiandae nam eaque non nostrum commodi.</p>
                         <button class="services-cta btn">Book Service</button>
@@ -80,7 +90,7 @@
                 </div>
             </section>
 
-            <section class="section portfolio">
+            <section class="section portfolio main-padding">
                 <h2 class="section-headline portfolio-headline uppercase"><span class="section-headline-accent">// </span>Portfolio</h2>
                 <ul class="portfolio-menu-list">
                     <li class="portfolio-menu-item uppercase">Javscript</li>
@@ -88,23 +98,28 @@
                     <li class="portfolio-menu-item uppercase">Marketing</li>
                     <li class="portfolio-menu-item uppercase">Webflow</li>
                 </ul>
-                <div class="portfolio-image-background img-bg-purple">
-                    <img src="./assets/image1.png" alt="">
+                <div class="portfolio-wrapper">
+                    <div class="portfolio-image-background">
+                        <div class="img-bg-purple">
+                        <img class="portfolio-img" src="./assets/image1.png" alt="">
+                    </div>
+                    </div>
+                    <div class="portfolio-image-background img-bg-pink">
+                        <img class="portfolio-img" src="./assets/image2.png" alt="">
+                    </div>
+                    <div class="portfolio-image-background img-bg-blue">
+                        <img class="portfolio-img" src="./assets/image3.png" alt="">
+                    </div>
+                    <div class="portfolio-image-background img-bg-brown">
+                        <img class="portfolio-img" src="./assets/image4.png" alt="">
+                    </div>
+                    <div class="portfolio-arrow-left"><</div>
+                    <div class="portfolio-arrow-right">></div>
                 </div>
-                <div class="portfolio-image-background img-bg-pink"></div>
-                    <img src="./assets/image2.png" alt="">
-                </div>
-                <div class="portfolio-image-background img-bg-blue">
-                    <img src="./assets/image3.png" alt="">
-                </div>
-                <div class="portfolio-image-background img-bg-brown">
-                    <img src="./assets/image4.png" alt="">
-                </div>
-                <div class="portfolio-arrow-left"><</div>
-                <div class="portfolio-arrow-right">></div>
+
             </section>
 
-            <section class="section blog">
+            <section class="section blog main-padding">
                 <h2 class="section-headline blog-headline uppercase"><span class="section-headline-accent">// </span>Blog</h2>
                 <div class="blog-item">
                     <img class="blog-item-img" src="./assets/blog-img-1.png" alt="">
@@ -136,7 +151,7 @@
                 <button class="blog-cta btn">View More</button>
             </section>
 
-            <section class="section testimonials">
+            <section class="section testimonials main-padding">
                 <h2 class="section-headline testimonials-headline uppercase"><span class="section-headline-accent">// </span>Testimonials</h2>
                 <div class="testimonials-container">
                     <img class="testimonials-image" src="#" alt="">
@@ -146,7 +161,7 @@
                 <button class="testimonials-slide">...</button>
             </section>
 
-            <section class="section contact">
+            <section class="section contact main-padding">
                 <h2 class="section-headline contact-headline uppercase"><span class="section-headline-accent">//</span> Contact</h2>
                 <form class="contact-left-form">
                     <input class="contact-input" type="text" placeholder="Full Name" aria-label="Enter your full name" name="name">
@@ -163,7 +178,7 @@
                 </div>
             </section>
 
-            <footer class="section footer-section">
+            <footer class="section footer-section main-padding">
                 <div class="footer-left-container">
                     <h2 class="footer-headline uppercase"><span class="dark-accent">@</span>tted</h2>
                     <h4 class="footer-subtitle uppercase outfit"><span class="footer-subtitle-span">// </span>Get design advice</h4>
